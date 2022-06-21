@@ -1,11 +1,11 @@
 import axios from 'axios';
 import { inflate } from 'pako';
 
+export const url =
+  'https://raw.githubusercontent.com/NazarHarashchak/MobileBanking/9155a04a3ff064167537a7c32f9cca356a5c3ab4/FrontEnd/node_modules/.cache/eslint-loader/b3fa51dc9159babf532b97696dacb328bf0a70dc.json.gz';
+
 export const getData = async () => {
-  const response = await axios.get(
-    'https://raw.githubusercontent.com/NazarHarashchak/MobileBanking/9155a04a3ff064167537a7c32f9cca356a5c3ab4/FrontEnd/node_modules/.cache/eslint-loader/b3fa51dc9159babf532b97696dacb328bf0a70dc.json.gz',
-    { responseType: 'blob' }
-  );
+  const response = await axios.get(url, { responseType: 'blob' });
 
   const dataArrayBuffer = await response.data.arrayBuffer();
 
