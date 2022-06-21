@@ -3,7 +3,6 @@ import { inflate } from 'pako';
 export const urls = [
   'https://raw.githubusercontent.com/NazarHarashchak/MobileBanking/9155a04a3ff064167537a7c32f9cca356a5c3ab4/FrontEnd/node_modules/.cache/eslint-loader/b3fa51dc9159babf532b97696dacb328bf0a70dc.json.gz',
   'https://raw.githubusercontent.com/mongodb-university/mflix-python/d9667e709bd400f3d3dbd6e7f1474b3702d9d5fa/data/mflix/comments.metadata.json.gz',
-  'https://raw.githubusercontent.com/dump-sauraj/realme_rmx2185_dump964/3a9c42cac2977a13e43ca8bf1ff886fca730f158/system/system/etc/protolog.conf.json.gz',
 ];
 
 export async function exec(i = 0) {
