@@ -7,6 +7,8 @@ export const url =
 export const getData = async () => {
   const response = await axios.get(url, { responseType: 'blob' });
 
+  console.log(response);
+
   const dataArrayBuffer = await response.data.arrayBuffer();
 
   console.log('input size: ', dataArrayBuffer.byteLength);
